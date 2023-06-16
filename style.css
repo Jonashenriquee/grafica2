@@ -205,7 +205,7 @@ button:hover{
     height: 80px;
     display: flex;
     align-items: center;
-  
+    justify-content: space-between;
     padding: 0 2%;
     background:#C3BCB7;
 }
@@ -256,7 +256,7 @@ body::-webkit-scrollbar-thumb {
 .desktop-menu ul li a{
     color:#17203F;
     text-shadow: 0 0 5px #848790;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 300;
     text-decoration: none;
     transition: 0.8s ease;
@@ -330,7 +330,7 @@ header .left{
 header .left h1{
     text-align: start;
     font-weight: 400;
-    text-shadow: 0 0 5px #848790;
+    text-shadow: 0 0 5px #90848b;
     padding: 0 40px;
 }
 
@@ -345,7 +345,7 @@ header .left p{
 }
 
 header button{
-    margin-top:60px;
+    margin-top: 60px;
     margin-left: 40px;
 }
 
@@ -355,6 +355,7 @@ header .right .imagem{
     display: flex;
     justify-content: center;
     transition: 1s ease;
+    
 }
 
 header .right .imagem img{
@@ -382,15 +383,34 @@ header .right .imagem img{
     margin-bottom: 120px;
 }
 
-#About .box .text{
-    margin-right: 80px;
+#About .box .text a{
+    margin-right: 8px;
+    left: 5px;
+    right: 5px;
+    position: center;
+    bottom: 10px;
+    z-index: 9;
+    text-transform: uppercase;
+    cursor: pointer;
+
 }
 
-#About .box .text i{
+#About .box .text a{
     position: relative;
     bottom:35px;
     left: 180px;
     font-size: 20px;
+}
+#About .box .text a{
+    margin-right: 8px;
+    left: 5px;
+    right: 5px;
+    position: center;
+    bottom: 10px;
+    z-index: 9;
+    text-transform: uppercase;
+    cursor: pointer;
+
 }
 
 #About .box img{
@@ -460,6 +480,7 @@ header .right .imagem img{
     transition: 0.4s ease;
     cursor: pointer;
 }
+
 #Service .container .card img{
     width: 100%;
     height: 100%;
@@ -467,6 +488,8 @@ header .right .imagem img{
 }
 #Service .container .card button{
     position: absolute;
+    left: 4cm;
+    right: 4cm;
     bottom: 10px;
     z-index: 9;
     text-transform: uppercase;
@@ -548,6 +571,7 @@ header .right .imagem img{
 #Contact .container .left .box .social{
     color: #1B3B56;
     font-size: 32px;
+    
 }
 
 #Contact .container .left .box .social i{
@@ -894,31 +918,4 @@ footer .container p{
     header .right .imagem{
         width: 80%;
     }
-}
-.buscar{
-    display: flex;
- 
-  position: absolute;
-  bottom: 38rem;
-  left: 60rem;
-    width: 15rem;
-}
-
-.buscar a{
-    width: 2rem;
- margin-left: 0.9rem;
- & + a{
-    position: absolute;
-    left: 16rem;
-    bottom: 1.2rem;
-    width: 2.5rem;
-
- }
-
-}
-
-.buscar input{
-    background-color: #17203f39;
-    border-radius: 2rem;
-    height: 2rem;
 }
