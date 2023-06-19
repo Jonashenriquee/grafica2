@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="cadastro.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cadastro</title>
+	</head>
+	<body>
+		<div class="main-login">
+			<div class="left-login">
+				<h1>Cadastre-se e<br/>acesse a nossa grafica</h1>
+				<img src="image/img.svg" class="left-login-image" alt="animada" />
+			</div>
+			<form id="form">
+			<div class="right-login">
+					<div class="card-login">
+						<h1>CADASTRO</h1>
+                        <form>
+						<div class="textfield">
+							<label for="usuario">Email</label>
+							<input type="text" name="usuario" class="input required" />
+                            
+						</div>
+						<div class="textfield">
+							<label for="senha">Senha</label>
+							<input id="senha" type="password" name="senha" class="input required" />
+                            
+						</div>
+                        <div class="textfield">
+							<label for="senha">Repetir senha</label>
+							<input id="confirmarsenha" type="password" name="senha" class="input required"/>
+                            
+						</div>
+						<button type="submit" class="btn-login">Cadastrar</button>
+						<div class="loginfooter">
+							<div class="login-facebook">
+								<span>
+									<img height="20px" src="./image/fb.png" alt="facebook">
+									<a href="#">Conectar-se com Facebook</a>
+								</span>
+							</div>
+						 </div>
+                      </form>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+        <script src="cadastro.js"></script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="barra.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="main-login">
+    <div class="left-login">
+      <h1>Faça Login<br/>E acesse a Agamenon</h1>
+      <img src="image/img.svg" class="left-login-image" alt="animada" />
+    </div>
+    <form>
+      <div class="right-login">
+        <div class="card-login">
+          <h1>LOGIN</h1>
+          <div class="textfield">
+            <label for="usuario">Email</label>
+            <input type="text" name="usuario" id="email" required/>
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha"/>
+          </div>
+          <div class="checkbox-remember">
+            <input type="checkbox" id="my-checkbox" />
+            <label for="my-checkbox">Lembrar de mim</label>
+          </div>
+          <button type="button" onclick="entrar()" class="btn-login">Login</button>
+          <div class="loginfooter">
+            <span>
+              <a href="./cadastro.html">CADASTRE-SE CLICANDO AQUI</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+		<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+		<script src="login.js"></script>
+	</body>
+</html>
