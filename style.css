@@ -197,6 +197,7 @@ button:hover{
 }
 
 .info{
+    text-align: center;
     display: flex;
 }
 
